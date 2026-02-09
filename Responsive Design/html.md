@@ -2,10 +2,9 @@
 
 ## Understanding HTML Attributes (Theroy)
 
-### what Roles Does HTML Play on the Web?
+### 1.what Roles Does HTML Play on the Web?
 
 - **HTML** :
-
   - Stands for Hyper Text Markup Langauges which used for building web pages
   - represents the content and structure of web page
     using Elements
@@ -18,22 +17,98 @@
 - **src**: Specifies the image location.
 - **alt**: Provides short, descriptive text for an image.
 
-### What Are Attributes and How Do They Work?
+### 2.What Are Attributes and How Do They Work?
 
 - **Attribute**: A value placed inside the opening tag or self-closing tag.  
   It provides additional information or controls how the element behaves.
 
 - **Common Attributes**
-
   - **href**: Specifies the link URL.
   - **target**: Specifies where to open the link.
 
 - **Boolean Attributes**
-
   - Do not require a value.
   - Used to specify the state of an element.
   - Examples: `checked`, `readonly`, `disabled`, `required`.
 
 - **checked**: Specifies that a checkbox is checked by default.
+
+---
+
+## Understanding The HTML Boilerplate (Theroy)
+
+### 1.What Is the Role of the Link Element in HTML, and How Can It Be Used to Link to External Stylesheets?
+
+- **link**:
+  - It's an Element used to link external resources (ex: stylesheets, icon, etc) with
+    HTML Document.
+  - It should be placed inside the head element
+  - `rel Attribute`: used to specifiy the relationship between linked resources and HTML Document,
+    In this situation, we need to specify that this linked resource is a stylesheet.
+
+  ```html
+  <link rel="stylesheet" href="./styles.css" />
+  ```
+
+  - `href Attribute`: used to specifiy the location of URL for the Linked Resource.
+
+  - Another common use case for the link element is to link to icons. Here is an example of linking to a favicon, favicon is short for favorite icon
+
+  ```html
+  <link rel="icon" href="favicon.ico" />
+  ```
+
+### 2.What Is an HTML Boilerplate, and Why Is It Important?
+
+- **Boilerplate**:
+  - It's like a ready-made template for web pages.
+  - It's include the basic structure and essential elements every HTML Documents need.
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>freeCodeCamp</title>
+      <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body></body>
+  </html>
+  ```
+
+- **DOCTYPE declaration**:
+  - It tells browsers which version of HTML you're using.
+  ```html
+  <!DOCTYPE html>
+  ```
+- **head section**:
+  - It contain the site's meta data in `meta` elements (ex: character encoding, site's title, etc).
+
+  ```html
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Title Goes Here</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  ```
+
+- **body section**:
+  - Its about page content.
+
+  ```html
+  <body>
+    <h1>I am a main title</h1>
+    <p>Example paragraph text</p>
+  </body>
+  ```
+
+### 3.What Is UTF-8 Character Encoding, and Why Is It Needed?
+
+- **UTF-8 (UCS Transformation Format 8)**:
+  - It is a standardized character encoding widely used on the web.
+  - Character encoding is the method computers use to store characters as data.
+  - UTF-8 supports every character in the Unicode character set - and this includes characters and symbols from all writing systems, languages, and technical symbols.
 
 ---
