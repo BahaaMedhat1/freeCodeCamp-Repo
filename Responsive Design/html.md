@@ -1,8 +1,8 @@
-# Basic HTMl
+# Basic HTMl.
 
-## Understanding HTML Attributes (Theroy)
+## 1. Understanding HTML Attributes (Theroy).
 
-### 1.what Roles Does HTML Play on the Web?
+### A- what Roles Does HTML Play on the Web?
 
 - **HTML** :
   - Stands for Hyper Text Markup Langauges which used for building web pages
@@ -17,7 +17,7 @@
 - **src**: Specifies the image location.
 - **alt**: Provides short, descriptive text for an image.
 
-### 2.What Are Attributes and How Do They Work?
+### B- What Are Attributes and How Do They Work?
 
 - **Attribute**: A value placed inside the opening tag or self-closing tag.  
   It provides additional information or controls how the element behaves.
@@ -35,9 +35,9 @@
 
 ---
 
-## Understanding The HTML Boilerplate (Theroy)
+## 2. Understanding The HTML Boilerplate (Theroy).
 
-### 1.What Is the Role of the Link Element in HTML, and How Can It Be Used to Link to External Stylesheets?
+### A- What Is the Role of the Link Element in HTML, and How Can It Be Used to Link to External Stylesheets?
 
 - **link**:
   - It's an Element used to link external resources (ex: stylesheets, icon, etc) with
@@ -58,7 +58,7 @@
   <link rel="icon" href="favicon.ico" />
   ```
 
-### 2.What Is an HTML Boilerplate, and Why Is It Important?
+### B- What Is an HTML Boilerplate, and Why Is It Important?
 
 - **Boilerplate**:
   - It's like a ready-made template for web pages.
@@ -104,11 +104,67 @@
   </body>
   ```
 
-### 3.What Is UTF-8 Character Encoding, and Why Is It Needed?
+### C- What Is UTF-8 Character Encoding, and Why Is It Needed?
 
 - **UTF-8 (UCS Transformation Format 8)**:
   - It is a standardized character encoding widely used on the web.
   - Character encoding is the method computers use to store characters as data.
   - UTF-8 supports every character in the Unicode character set - and this includes characters and symbols from all writing systems, languages, and technical symbols.
+
+---
+
+## 3. HTML Fundamentals (Theroy).
+
+### A- What are Div Elements and When Should You Use Them?
+
+- **div**:
+  - It's an element that used as a container to group other elements.
+  - We will mainly use the div element when we want to group HTML elements that will share a set of CSS styles.
+- **section**:
+  - It's an semantic element that has meaning over the div element which is not semantic.
+  - It also used to group other elements that will share css styles.
+  - `Semantics` are the meaning of words or phrases in a language
+
+### B- What Are IDs and Classes, and When Should You Use Them?
+
+- **id**:
+  - It adds a unique identifier to an HTML element.
+  - `The hash symbol (#)` tells the computer you want to target an id with that value.
+  - id names should not be used more than once, and they should always be unique, and they cannot have spaces in them.
+
+- **class**:
+  - It's contrast of `id` attribute, and It doesn't need to be unique.
+  - We use it when we want to apply a set of styles to many elements.
+  - It can have spaces.
+
+### C- What Are HTML Entities, and What Are Some Common Examples?
+
+- **HTML Entity**:
+  - `character reference,` is a set of characters used to represent a reserved character in HTML.
+
+  - `named character references` starts with an ampersand sign (&) and end with a semicolon (;), etc: &amp; &lt; &gt; .
+
+  - `decimal numeric reference` starts with an ampersand sign and hash symbol (#), followed by one or more decimal digits, followed by a semicolon, etc &#169; &#174; .
+
+  - `hexadecimal numeric reference` starts with an ampersand sign, hash symbol, and the letter x. Then it is followed by one or more ASCII hex digits and ends with a semicolon, &#x20AC; &#x03A9;.
+
+### D- What Is the Role of the Script Element in HTML, and How Can It Be Used to Link to External JavaScript Files?
+
+- ## **script Element**:
+  - is used to embed executable code in HTML document.
+
+  ```html
+  <script>
+    // alert("Welcome to freeCodeCamp");?
+  </script>
+  ```
+
+  - it is considered best practice to link to an external JavaScript file instead of writing inside HTML document to apply separate of concern principle.
+
+  ```html
+  <script src="path-to-javascript-file.js"></script>
+  ```
+
+  - `Separation of concerns` is a design principle where you separate your programs into distinct sections and have each section address a separate concern.
 
 ---
